@@ -1,1 +1,14 @@
+db.planilha.insertOne(
+... {
+... data:new Date("2025-02-21"),
+... hora:"20:15",
+... rede:"instagram.com",
+... copy:"Seja nas estradas ou nas ruas da cidade, o carro é mais que um meio de transporte: é a liberdade sobre as rodas. Qual é o seu modelo favorito para",
+... tamanho:143,
+... link:"https://www.instagram.com/",
+... valor:200.50,
+... curtidas:400,
+... comentarios:50
+... }
+... )
 db.planilha.insertMany([{data:new Date("2025-02-21"),hora:"20:15",rede:"instagram.com",tema:"carros",copy:"Seja nas estradas",tamanho:143,link:"https://www.instagram.com/",valor:200.50,curtidas:400,comentarios:50},{data:new Date("2025-02-21"),hora:"20:15",rede:"instagram.com",tema:"carros",copy:"Seja nas estradas",tamanho:143,link:"https://www.instagram.com/",valor:200.50,curtidas:400,comentarios:50},{data:new Date("2025-02-21"),hora:"20:15",rede:"instagram.com",tema:"carros",copy:"Seja nas estradas",tamanho:143,link:"https://www.instagram.com/",valor:200.50,curtidas:400,comentarios:50}]) 
