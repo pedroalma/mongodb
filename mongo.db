@@ -12,3 +12,17 @@ db.planilha.insertOne(
 ... }
 ... )
 db.planilha.insertMany([{data:new Date("2025-02-21"),hora:"20:15",rede:"instagram.com",tema:"carros",copy:"Seja nas estradas",tamanho:143,link:"https://www.instagram.com/",valor:200.50,curtidas:400,comentarios:50},{data:new Date("2025-02-21"),hora:"20:15",rede:"instagram.com",tema:"carros",copy:"Seja nas estradas",tamanho:143,link:"https://www.instagram.com/",valor:200.50,curtidas:400,comentarios:50},{data:new Date("2025-02-21"),hora:"20:15",rede:"instagram.com",tema:"carros",copy:"Seja nas estradas",tamanho:143,link:"https://www.instagram.com/",valor:200.50,curtidas:400,comentarios:50}]) 
+
+db.filmes.insertOne({ titulo:'O circulo',ano:2016,diretor:'James Ponsoldt',avaliacao:{bom:0, medio:1,ruim:0} })
+
+use mercado
+
+db.produtos.insertOne({nome:'Feijão Carioca',descricao:'Feijão carioca selecionado',preco:8.49,quantidade:2})
+
+db.produtos.insertMany([{nome:'Feijão Carioca',descricao:'Feijão carioca selecionado',preco:8.49,quantidade:2},{nome:'Feijão Carioca',descricao:'Feijão carioca selecionado',preco:8.49,quantidade:2},{nome:'Feijão Carioca',descricao:'Feijão carioca selecionado',preco:8.49,quantidade:2},{nome:'Feijão Carioca',descricao:'Feijão carioca selecionado',preco:8.49,quantidade:2},{nome:'Feijão Carioca',descricao:'Feijão carioca selecionado',preco:8.49,quantidade:2}])
+
+db.produtos.find()
+
+db.produtos.find({preco:{$gte:5}},{quantidade:2,preco:8})
+
+db.produtos.find({preco:{$lt:5}})
