@@ -26,3 +26,5 @@ db.produtos.find()
 db.produtos.find({preco:{$gte:5}},{quantidade:2,preco:8})
 
 db.produtos.find({preco:{$lt:5}})
+
+([ { name:"amarilda da silva", age:15 }, { name:"raphaela Medeiros", age:19 }, { name:"larissa de jesus", age:18 },{name:"Eduardo da cunha", age:21},{name:"Matheus Matheus", age:22},{name:"isabela" , age:18}])
